@@ -47,7 +47,7 @@
             this.velocidadeToolStripMenuItem});
             this.menuStripPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuStripPrincipal.Name = "menuStripPrincipal";
-            this.menuStripPrincipal.Size = new System.Drawing.Size(1262, 24);
+            this.menuStripPrincipal.Size = new System.Drawing.Size(416, 24);
             this.menuStripPrincipal.TabIndex = 0;
             this.menuStripPrincipal.Text = "menuStrip1";
             // 
@@ -56,37 +56,43 @@
             this.comprimentoToolStripMenuItem.Name = "comprimentoToolStripMenuItem";
             this.comprimentoToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
             this.comprimentoToolStripMenuItem.Text = "Comprimento";
+            this.comprimentoToolStripMenuItem.Click += new System.EventHandler(this.comprimentoToolStripMenuItem_Click);
             // 
             // áreaToolStripMenuItem
             // 
             this.áreaToolStripMenuItem.Name = "áreaToolStripMenuItem";
             this.áreaToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.áreaToolStripMenuItem.Text = "Área";
+            this.áreaToolStripMenuItem.Click += new System.EventHandler(this.áreaToolStripMenuItem_Click);
             // 
             // volumeToolStripMenuItem
             // 
             this.volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
             this.volumeToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.volumeToolStripMenuItem.Text = "Volume";
+            this.volumeToolStripMenuItem.Click += new System.EventHandler(this.volumeToolStripMenuItem_Click);
             // 
             // massaToolStripMenuItem
             // 
             this.massaToolStripMenuItem.Name = "massaToolStripMenuItem";
             this.massaToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.massaToolStripMenuItem.Text = "Massa";
+            this.massaToolStripMenuItem.Click += new System.EventHandler(this.massaToolStripMenuItem_Click);
             // 
             // velocidadeToolStripMenuItem
             // 
             this.velocidadeToolStripMenuItem.Name = "velocidadeToolStripMenuItem";
             this.velocidadeToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.velocidadeToolStripMenuItem.Text = "Velocidade";
+            this.velocidadeToolStripMenuItem.Click += new System.EventHandler(this.velocidadeToolStripMenuItem_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 637);
+            this.ClientSize = new System.Drawing.Size(416, 429);
             this.Controls.Add(this.menuStripPrincipal);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStripPrincipal;
             this.Name = "MainForm";
             this.Text = "Sistema de conversão de Imperial/Métrico";
