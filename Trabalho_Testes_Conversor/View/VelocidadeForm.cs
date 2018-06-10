@@ -16,5 +16,19 @@ namespace Trabalho_Testes_Conversor.View
         {
             InitializeComponent();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+
+        }
+        private void LimparCampos()
+        {
+            txtImperial.Text = string.Empty;
+            txtMetrico.Text = string.Empty;
+
+            txtImperial.Enabled = true;
+            txtMetrico.Enabled = true;
+        }
     }
 }

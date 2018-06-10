@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="BusinessLayer\Constantes.cs" />
     <Compile Include="BusinessLayer\OperacoesMatematicas.cs" />
+    <Compile Include="BusinessLayer\OperacoesPadrao.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

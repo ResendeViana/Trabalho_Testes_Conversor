@@ -86,6 +86,7 @@
             this.btnConverter.TabIndex = 4;
             this.btnConverter.Text = "Converter";
             this.btnConverter.UseVisualStyleBackColor = false;
+            this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
             // btnLimpar
             // 
@@ -99,6 +100,7 @@
             this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // label4
             // 
