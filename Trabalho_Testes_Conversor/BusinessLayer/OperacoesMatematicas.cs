@@ -27,5 +27,25 @@ namespace Trabalho_Testes_Conversor.BusinessLayer
         {
             return valor * Constantes.m2_sqyd;
         }
+
+        public static double CuftToM3(double valor)
+        {
+            return valor * Constantes.cuft_m3;
+        }
+
+        public static double M3ToCuft(double valor)
+        {
+            return valor * Constantes.m3_cuft;
+        }
+
+        public static double LbToKg(double valor)
+        {
+            return valor * Constantes.lb_kg;
+        }
+
+        public static double KgToLb(double valor)
+        {
+            return valor * Constantes.kg_lb;
+        }
     }
 }

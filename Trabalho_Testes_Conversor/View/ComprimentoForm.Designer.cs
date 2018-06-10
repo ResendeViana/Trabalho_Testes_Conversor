@@ -65,6 +65,7 @@
             this.txtMetrico.Name = "txtMetrico";
             this.txtMetrico.Size = new System.Drawing.Size(204, 29);
             this.txtMetrico.TabIndex = 2;
+            this.txtMetrico.TextChanged += new System.EventHandler(this.txtMetrico_TextChanged);
             // 
             // txtImperial
             // 
@@ -73,6 +74,7 @@
             this.txtImperial.Name = "txtImperial";
             this.txtImperial.Size = new System.Drawing.Size(204, 29);
             this.txtImperial.TabIndex = 3;
+            this.txtImperial.TextChanged += new System.EventHandler(this.ComprimentoForm_TextChanged);
             // 
             // btnConverter
             // 

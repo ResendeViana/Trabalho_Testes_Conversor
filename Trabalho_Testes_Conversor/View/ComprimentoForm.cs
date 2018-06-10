@@ -78,5 +78,17 @@ namespace Trabalho_Testes_Conversor.View
                 MessageBox.Show("Valor Informado Invalido", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void txtMetrico_TextChanged(object sender, EventArgs e)
+        {
+            txtImperial.Text = string.Empty;
+
+        }
+
+        private void ComprimentoForm_TextChanged(object sender, EventArgs e)
+        {
+            txtMetrico.Text = string.Empty;
+
+        }
     }
 }
