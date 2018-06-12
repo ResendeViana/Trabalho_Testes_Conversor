@@ -80,6 +80,7 @@
     <Compile Include="View\VelocidadeForm.Designer.cs">
       <DependentUpon>VelocidadeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\VelocidadeMock.cs" />
     <Compile Include="View\VolumeForm.cs">
       <SubType>Form</SubType>
     </Compile>
