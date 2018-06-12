@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Trabalho_Testes_Conversor.BusinessLayer;
 
 namespace Trabalho_Testes_Conversor.View
 {
@@ -33,16 +34,47 @@ namespace Trabalho_Testes_Conversor.View
 
         private void btnConverter_Click(object sender, EventArgs e)
         {
-            VelocidadeMock vel = new VelocidadeMock();
-
+            double valor = 0;
             if (!string.IsNullOrWhiteSpace(txtImperial.Text))
             {
+                valor = OperacoesPadrao.ConvertDoubleCustom(txtImperial.Text);
+                if (valor < 0)
+                {
+                    MessageBox.Show("Valor Informado Invalido", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
 
-                MessageBox.Show(vel.VelocidadeMockImperial(txtImperial.Text).ToString());
+                }
+
+                MessageBox.Show(
+                    string.Format("Resultado da conversão: {0} {2} = {1} {3}", txtImperial.Text, OperacoesMatematicas.MphToKph(valor), "Mph", "Kph"),
+                    "Resultado",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                    );
+
+                LimparCampos();
             }
             else if (!string.IsNullOrWhiteSpace(txtMetrico.Text))
             {
-                MessageBox.Show(vel.VelocidadeMockMetrico(txtMetrico.Text).ToString());
+                valor = OperacoesPadrao.ConvertDoubleCustom(txtMetrico.Text);
+                if (valor < 0)
+                {
+                    MessageBox.Show("Valor Informado Invalido", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                MessageBox.Show(
+                    string.Format("Resultado da conversão: {0} {2} = {1} {3}", txtMetrico.Text, OperacoesMatematicas.KphToMph(valor), "Kph", "Mph"),
+                    "Resultado",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                    );
+
+                LimparCampos();
+            }
+            else
+            {
+                MessageBox.Show("Valor Informado Invalido", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }
