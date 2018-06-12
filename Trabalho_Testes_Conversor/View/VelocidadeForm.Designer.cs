@@ -64,6 +64,7 @@
             this.btnConverter.TabIndex = 10;
             this.btnConverter.Text = "Converter";
             this.btnConverter.UseVisualStyleBackColor = false;
+            this.btnConverter.Click += new System.EventHandler(this.btnConverter_Click);
             // 
             // txtImperial
             // 
@@ -72,6 +73,7 @@
             this.txtImperial.Name = "txtImperial";
             this.txtImperial.Size = new System.Drawing.Size(204, 29);
             this.txtImperial.TabIndex = 9;
+            this.txtImperial.TextChanged += new System.EventHandler(this.ComprimentoForm_TextChanged);
             // 
             // txtMetrico
             // 
@@ -80,6 +82,7 @@
             this.txtMetrico.Name = "txtMetrico";
             this.txtMetrico.Size = new System.Drawing.Size(204, 29);
             this.txtMetrico.TabIndex = 8;
+            this.txtMetrico.TextChanged += new System.EventHandler(this.txtMetrico_TextChanged);
             // 
             // label2
             // 

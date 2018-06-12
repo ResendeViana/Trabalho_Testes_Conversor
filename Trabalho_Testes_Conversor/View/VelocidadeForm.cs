@@ -30,5 +30,33 @@ namespace Trabalho_Testes_Conversor.View
             txtImperial.Enabled = true;
             txtMetrico.Enabled = true;
         }
+
+        private void btnConverter_Click(object sender, EventArgs e)
+        {
+            VelocidadeMock vel = new VelocidadeMock();
+
+            if (!string.IsNullOrWhiteSpace(txtImperial.Text))
+            {
+
+                MessageBox.Show(vel.VelocidadeMockImperial(txtImperial.Text).ToString());
+            }
+            else if (!string.IsNullOrWhiteSpace(txtMetrico.Text))
+            {
+                MessageBox.Show(vel.VelocidadeMockMetrico(txtMetrico.Text).ToString());
+            }
+
+        }
+
+        private void txtMetrico_TextChanged(object sender, EventArgs e)
+        {
+            txtImperial.Text = string.Empty;
+
+        }
+
+        private void ComprimentoForm_TextChanged(object sender, EventArgs e)
+        {
+            txtMetrico.Text = string.Empty;
+
+        }
     }
 }
