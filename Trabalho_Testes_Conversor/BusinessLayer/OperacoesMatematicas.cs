@@ -47,5 +47,15 @@ namespace Trabalho_Testes_Conversor.BusinessLayer
         {
             return valor * Constantes.kg_lb;
         }
+
+        public static double MphToKph(double valor)
+        {
+            return valor * Constantes.mph_kph;
+        }
+
+        public static double KphToMph(double valor)
+        {
+            return valor * Constantes.kph_mph;
+        }
     }
 }
